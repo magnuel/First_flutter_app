@@ -27,6 +27,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: "App views",
       home: Scaffold(
+          drawer: const Drawer(),
+          appBar: AppBar(
+            title: Text("Views Games"),
+          ),
           body: _Pages[_initialPage],
           bottomNavigationBar: BottomNavigationBar(
             onTap: (index) {
